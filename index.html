@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Artifact 03">
+	<meta name="author" content="Josh Gibson">
+	<meta name="robots" content="noindex">
+	<title>Form w/ Validation</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+	<h1>CONTACT US FORM</h1>
+	<form action="../thankyou.html" method="get" name="userDetails" onsubmit="return Validate()">
+		<fieldset>
+			<legend>User Information</legend>
+			<label for="firstname">Enter First Name (Max 20 letters) </label><br>
+			<input type="text" id="firstname"><br>
+			<div id="firstnameerror" class="error"></div>
+			
+			<label for="lastname">Enter Last Name (Max 50 characters: letters, dashes, or spaces only) </label><br>
+			<input type="text" id="lastname"><br>
+			<div id="lastnameerror" class="error"></div>
+			
+			<label for="email">Enter Email</label><br>
+			<input type="text" id="email"><br>
+			<div id="emailerror" class="error"></div>
+			
+			<label for="phone">Enter Phone Number (Max 15 Numbers: no spaces, dashes or other special characters) </label><br>
+			<input type="text" id="phone"><br>
+			<div id="phoneerror" class="error"></div>
+			
+			<label for="username">Enter Username (Max 12 Characters)</label><br>
+			<input type="text" maxlength="12" id="username"><br>
+			<div id="usernameerror" class="error"></div>
+			
+			<label for="password">Enter Password (Max 7 Characters)</label><br>
+			<input type="password" maxlength="7" id="password">
+			<div id="passworderror" class="error"></div>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Current Address</legend>
+			<label for="address">Enter Address</label><br>
+			<input type="text" name="address" id="address" size="50"><br>
+			<div id="addresserror" class="error"></div>
+			
+			<label for="city">Enter City</label><br>
+			<input type="text" name="city" id="city"><br>
+			<div id="cityerror" class="error"></div>
+			
+			<label for="countries">Choose Country</label><br>
+			<select id="countries">
+				<option>Canada</option>
+				<option>Mexico</option>
+				<option>United States</option>
+			</select><br>
+			
+			<label for="zipcode">Enter zipcode  (Required for US addresses)</label><br>
+			<input type="text" name="zip" id="zipcode">
+			<div id="zipcodeerror" class="error"></div>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Feel free to add comments</legend>
+			<textarea name="commentbox" id="commentbox" rows="4" cols="50"></textarea>
+		</fieldset>
+		
+		<br>
+		<input id="submit" type="submit" value="Submit">
+		<input id="cancel" type="submit" value="Cancel">
+	</form>
+	
+	<script src="index.js"></script>
+	<div id="errorcheck"></div>
+	<footer>
+		<hr>
+		<a href="http://www.w3.org/html/logo/">
+			<img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+		</a>
+		<br>
+		<a href="https://validator.w3.org/check?uri=referer" target="_blank">W3C Validator</a>
+		<br>
+		<a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">CSS Validator</a>
+	</footer>
+	
+</body>
+
+</html>
