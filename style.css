@@ -1,0 +1,22 @@
+a {
+  font-size: 140%;
+}
+a:hover {
+  font-weight: bold;
+}
+a:link {
+  color: DarkGoldenRod;
+}
+a:visited {
+  color: DarkGreen;
+}
+footer {
+  text-align: left;
+  padding-top: 50px;
+}
+.error {
+  color: red;
+}
+p {
+  margin-top: 0px;
+}
